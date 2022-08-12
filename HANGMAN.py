@@ -1,6 +1,6 @@
 import random
 from testing import stages
-wordlist = ["ardvark","baboon","camel"]
+wordlist = ["restaurant", "received", "good", "reviews", "expectations", "high", "although", "tasty", "reminded", "pulled", "salad", "house", "german", "street"]
 chosenword = random.choice(wordlist)
 display = []
 print(f"the secret word is {chosenword} ")
