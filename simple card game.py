@@ -35,7 +35,7 @@ for i in range(0, userinput):
 
 print("your deck is ", mydeck)
 for i in range(1, round + 1):
-    mychoice = str(input("choose your card steve"))
+    mychoice = str(input("choose your card: "))
     botchoice = botlist[0]
     if mychoice > botchoice:
         mydeck.remove(mychoice)
