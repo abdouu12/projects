@@ -27,31 +27,6 @@ while True:
      break
 
 
-BOT CODE :
-
-import random
-def rand(x , y):
-    a = random.randint(x, y)
-    return a
-
-def bot_guess(x,y):
- x = int(input("choose the first end of the guessing bounder: "))
- y = int(input("choose the second end of the guessing bounder: "))
- secretnumber = rand(x, y)
- botchoice = rand(x, y)
-
- while True:
 
 
-     if botchoice == secretnumber:
-         print(f"the bot has won \n the correct number was {secretnumber}")
-         break
 
-     elif botchoice > secretnumber:
-         botchoice = botchoice - 1
-
-     elif botchoice < secretnumber:
-         botchoice = botchoice + 1
-
-
-bot_guess(1,10)
