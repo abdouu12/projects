@@ -23,6 +23,8 @@ def check_winning(my_cards,bot_cards):
         print("you win")
     elif sum(my_cards) <21 and sum(my_cards)<sum(bot_cards):
         print("you lose")
+    elif sum(bot_cards)>21 and sum(my_cards) <21:
+        print("print you win")
 my_cards = card_dealer(num_cards=2)
 bot_cards = card_dealer(num_cards=2)
 end_of_game = False
@@ -42,6 +44,8 @@ while end_of_game == False:
              print(f"thebot's cards are {bot_cards}")
          elif start2 == "stay":
              bot_cards = bot_choice(bot_cards)
+             print(f"your new cards are {my_cards}")
+             print(f"thebot's cards are {bot_cards}")
              check_winning(my_cards, bot_cards)
              hit_or_stay = True
      my_cards = card_dealer(num_cards=2)  # Reset player cards
